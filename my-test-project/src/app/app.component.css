@@ -1,0 +1,26 @@
+.forButtons {
+    width: 60%;
+    margin: auto;
+}
+button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 8px 4px;
+    cursor: pointer;
+    border-radius: 16px;
+    box-shadow: 5px 5px 3px grey;
+
+  }
+button:hover {
+    background-color: #b5b9f3;
+  }
+.create {
+    background-color: rgb(110, 51, 219);
+  }
+.delete {
+    background-color: red;
+}

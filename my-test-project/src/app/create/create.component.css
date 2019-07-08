@@ -1,0 +1,9 @@
+form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+#saveButton{
+    margin-top: 20px;
+}

@@ -1,1 +1,5 @@
-<app-card *ngFor="let residence of residences" [residence]="residence"></app-card>
+<div class="forButtons">
+    <button routerLink="/create" class="create">Создать</button>
+    <button class="delete">Удалить</button>
+</div>
+<router-outlet></router-outlet>

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {RESIDENCES} from './mock-data';
 
 
 @Component({
@@ -8,5 +7,5 @@ import {RESIDENCES} from './mock-data';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  residences = RESIDENCES;
+  
 }

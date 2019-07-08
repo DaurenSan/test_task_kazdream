@@ -1,0 +1,16 @@
+.forPagination {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:40px;
+    width: 60%;
+}
+.list {
+    margin: auto;
+    width: 60%;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+label {
+    text-align: right;
+}
