@@ -1,4 +1,4 @@
-<div class="forButtons">
+<div *ngIf="router.url === '/list'" class="forButtons">
     <button routerLink="/create" class="create">Создать</button>
     <button class="delete">Удалить</button>
 </div>

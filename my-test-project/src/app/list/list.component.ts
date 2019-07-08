@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {RESIDENCES} from '../mock-data';
 import { FormControl } from '@angular/forms';
+import { ListService } from './list.service';
+import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -10,15 +12,18 @@ import { FormControl } from '@angular/forms';
 })
 export class ListComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private listService: ListService, public router: Router) {
+    this.items.valueChanges.subscribe( value => this.a = value);
+   }
   ngOnInit() {
     
   }
-  items = new FormControl(4);
+ 
+  items = new FormControl(null);
   p: number = 1;
-  a: number = this.items.value;
-  residences = RESIDENCES;
-  
+  a: number = 4;
 
+  
+  residences = this.listService.residences;
+  
 }

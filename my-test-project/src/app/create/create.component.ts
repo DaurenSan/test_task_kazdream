@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { ListService } from '../list/list.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-create',
@@ -8,7 +11,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class CreateComponent implements OnInit {
 
-  constructor() { }
+  constructor(private listService: ListService, public router: Router) { }
 
   ngOnInit() {
   }
@@ -18,6 +21,8 @@ export class CreateComponent implements OnInit {
     photo: new FormControl(null)
   });
   onSubmit() {
-    console.warn(this.createForm.value);
+    this.createForm.value.photo = this.createForm.value.photo.replace('D:\test_task_kazdream\my-test-project\src\assets', 'assets/');
+    this.listService.residences.push(this.createForm.value);
+    this.router.navigate(['/list']);
   }
 }
