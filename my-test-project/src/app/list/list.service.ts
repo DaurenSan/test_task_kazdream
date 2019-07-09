@@ -12,4 +12,5 @@ export class ListService {
   
   residences = RESIDENCES;
   temporaryArray = [];
+  cardToUpdate: Residence = null;
 }
