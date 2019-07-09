@@ -3,4 +3,5 @@ export class Residence {
     name: string;
     photo: string;
     description: string;
+    chosen: boolean;
  }

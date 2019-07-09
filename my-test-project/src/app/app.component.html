@@ -1,5 +1,5 @@
 <div *ngIf="router.url === '/list'" class="forButtons">
     <button routerLink="/create" class="create">Создать</button>
-    <button class="delete">Удалить</button>
+    <button class="delete" (click)="deleteSelected()">Удалить</button>
 </div>
 <router-outlet></router-outlet>

@@ -21,8 +21,9 @@ export class CreateComponent implements OnInit {
     photo: new FormControl(null)
   });
   onSubmit() {
-    this.createForm.value.photo = this.createForm.value.photo.replace('D:\test_task_kazdream\my-test-project\src\assets', 'assets/');
+    this.createForm.value.photo = 'assets/venskiy.jpg';
     this.listService.residences.push(this.createForm.value);
     this.router.navigate(['/list']);
+    console.log(this.createForm.value.photo)
   }
 }

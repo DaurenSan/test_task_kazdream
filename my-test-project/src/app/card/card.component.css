@@ -5,6 +5,9 @@
     flex-basis: auto;
     margin: 10px;
 }
+.card:hover {
+    box-shadow: 12px 12px 7px rgb(194, 26, 26);
+}
 .main {
     display: flex; 
     flex-direction: row;

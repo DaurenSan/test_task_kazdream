@@ -15,5 +15,5 @@
     </div>
 </div>
 <div class="list">     
-    <app-card *ngFor="let residence of residences | paginate: { itemsPerPage: a, currentPage: p }" [residence]="residence" ></app-card>
+    <app-card [ngStyle]="residence.chosen ? {'background-color': 'Red'}: {'background-color': 'White'}" *ngFor="let residence of this.listService.residences | paginate: { itemsPerPage: a, currentPage: p }" [residence]="residence" (click)="chooseCard(residence)"></app-card>
 </div>
